@@ -46,12 +46,11 @@ public class ClientProtocolException extends IOException {
     }
 
     public ClientProtocolException(final Throwable cause) {
-        initCause(cause);
+        super(cause);
     }
 
     public ClientProtocolException(final String message, final Throwable cause) {
-        super(message);
-        initCause(cause);
+        super(message, cause);
     }
 
 
